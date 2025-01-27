@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prabhat Singh">
+    <meta name="description" content="This is a currency converter website.">
+    <link rel="stylesheet" href="main.css">
+    <title>Currency Converter - Convert your currency</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">MyCurrencyConverter</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            <label for="currency">Choose a currency:</label>
+            <select name="currency" id="country-currency" required>
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="SAR">Saudi Riyal</option>
+                <option value="KWD">Kuwaiti Dinar</option>
+                <option value="POUND">Pound</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="AUD">Australian Dollar</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="output" style="display: none;">
+            <h2>Here is your converted values in different currencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our Currency Converter website, your one-stop destination for quick, accurate, and hassle-free currency conversions. Whether you’re a traveler, a business professional, or a curious learner, we’re here to make currency exchange calculations simple and reliable.
+        Powered by CurrencyAPI, our platform ensures up-to-date exchange rates from trusted global sources. With a focus on accuracy and speed, we aim to provide a seamless user experience that helps you make informed financial decisions.
+        Our mission is to bridge the gap between global currencies and make currency exchange accessible to everyone. We are committed to delivering a reliable tool that you can count on anytime, anywhere.
+        Thank you for choosing us as your currency conversion partner.</p>
+    </div>
+    <div class="contact-section" id="contact">
+        <h2>Contact Section</h2>
+        <address>
+            <p><strong>Developer Name:</strong> Prabhat Singh</p>
+            <p><strong>Contact Details:</strong> +91-8175079416</p>
+            <p><strong>Address:</strong> Vill + Post: Budhaun</p>
+            <p><strong>District:</strong> Ballia</p>
+            <p><strong>State:</strong> Uttar Pradesh (277121)</p>
+        </address>
+    </div>
+    <div class="backtotop">
+        <button onclick="scrollToTop()">Back to Top</button>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+    <script src="main1.js"></script>
+</body>
+</html>
